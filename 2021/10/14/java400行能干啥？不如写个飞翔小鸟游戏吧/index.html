@@ -1,191 +1,114 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
+  
+
     <head>
-  <!-- 元数据 -->
-  <meta charset="utf-8">
-  <link rel="icon" href="">
-  <title>飞翔小鸟游戏（java实现） | Hexo</title>
-  <meta name="author" content="John Doe" />
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="robots" content="index,follow" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="format-detection" content="telphone=no, email=no" />
-  
-    <meta name="keywords" content="" />
-  
-  <meta name="description" content="声明：该项目是牛客网的一个开源项目 @TOC 文章目录一  效果图  二 思维导图1.类的属性关系1234567891011121314151617181920graph LRA&amp;#123;飞翔小鸟游戏类&amp;#125;  --&gt; B(小鸟类)A--&gt;a1(游戏分数)A--&gt;a2(开始结束背景图)A--&gt;a3(游戏运行状态)B--&gt;C((位置坐标))B--&gt;D((图">
-<meta property="og:type" content="article">
-<meta property="og:title" content="飞翔小鸟游戏（java实现）">
-<meta property="og:url" content="http://example.com/2021/10/14/java400%E8%A1%8C%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F%E4%B8%8D%E5%A6%82%E5%86%99%E4%B8%AA%E9%A3%9E%E7%BF%94%E5%B0%8F%E9%B8%9F%E6%B8%B8%E6%88%8F%E5%90%A7/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="声明：该项目是牛客网的一个开源项目 @TOC 文章目录一  效果图  二 思维导图1.类的属性关系1234567891011121314151617181920graph LRA&amp;#123;飞翔小鸟游戏类&amp;#125;  --&gt; B(小鸟类)A--&gt;a1(游戏分数)A--&gt;a2(开始结束背景图)A--&gt;a3(游戏运行状态)B--&gt;C((位置坐标))B--&gt;D((图">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/null">
-<meta property="article:published_time" content="2021-10-14T14:47:29.891Z">
-<meta property="article:modified_time" content="2021-10-14T14:49:10.682Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/null">
-<meta name="twitter:site" content="@null">
-  
-  <!-- 站点验证相关 -->
-  
-    
-    
-    
-  
-  <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
-  
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" type="text/css" media="all">
-  
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-  
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  
-  
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
-  
-  <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-  
-    <script src="https://cdn.jsdelivr.net/npm/qrcode_js@1.0.0/qrcode.min.js"></script>
-  
-  
-  <style>
-    
-      .kratos-cover.kratos-cover-2 {
-        background-image: url('/images/banner.webp');
-      }
-    
-    
-      @media(min-width:768px) {
-        body.custom-background {
-          background-image: url('/images/bg.webp');
+      <meta charset="utf-8" />
+        
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>飞翔小鸟游戏（java实现） |  Hexo</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
         }
-      }
+      </style>
+    </head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
     
-  </style>
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-java400行能干啥？不如写个飞翔小鸟游戏吧"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  飞翔小鸟游戏（java实现）
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/10/14/java400%E8%A1%8C%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F%E4%B8%8D%E5%A6%82%E5%86%99%E4%B8%AA%E9%A3%9E%E7%BF%94%E5%B0%8F%E9%B8%9F%E6%B8%B8%E6%88%8F%E5%90%A7/" class="article-date">
+  <time datetime="2021-10-14T14:47:29.891Z" itemprop="datePublished">2021-10-14</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">1.8k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">9 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
   
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-
-    <body class="custom-background">
-        <div id="kratos-wrapper">
-    <div id="kratos-page">
-        <div id="kratos-header">
-            <header id="kratos-desktop-topnav" class="kratos-topnav">
-                <div class="container">
-                    <div class="nav-header">
-                        <nav id="kratos-menu-wrap">
-                            <ul id="kratos-primary-menu" class="sf-menu">
-                                
-                                    
-                                        <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
-                                    
-                                
-                                    
-                                        <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
-                                    
-                                
-                                    
-                                        <li><a href="/friends/"><i class="fa fa-paw"></i>好伙伴</a></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a><i class="fa fa-link"></i>链接</a>
-                                            <ul class="sub-menu">
-                                                
-                                                    
-                                                
-                                                    
-                                                        <li><a target="_blank" rel="noopener" href="https://candinya.com">作者博客</a></li>
-                                                    
-                                                
-                                                    
-                                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">项目链接</a></li>
-                                                    
-                                                
-                                            </ul>
-                                        </li>
-                                    
-                                
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-            <header id="kratos-mobile-topnav" class="kratos-topnav">
-                <div class="container">
-                    <div class="color-logo"><a href="/">Hexo</a></div>
-                    <div class="nav-toggle">
-                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
-                            <i></i>
-                        </a>
-                    </div>
-                </div>
-            </header>
-        </div>
-        <div class="kratos-start kratos-hero-2">
-            <!-- <div class="kratos-overlay"></div> -->
-            <div class="kratos-cover kratos-cover-2 text-center">
-                <div class="desc desc2 animate-box">
-                    <a href="/">
-                        <h2>Hexo</h2> <br />
-                        <span></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div id="kratos-blog-post">
-            <div class="container">
-                <div id="main" class="row">
-                    
-
-        
-
-            <section class="col-md-8">
-
-        
-
-            <article>
-    <div class="kratos-hentry kratos-post-inner clearfix">
-        <header class="kratos-entry-header">
-            
-                <h1 class="kratos-entry-title text-center">飞翔小鸟游戏（java实现）</h1>
-            
-            
-            <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2021-10-14</li>
-                <li><i class="fa fa-user"></i> 作者 John Doe</li>
-                <li>
-                    <i class="fa fa-edit"></i> 
-                    
-                    
-                        ~8.25K
-                    
-                    字
-                </li>
-                
-            </ul>
-        </header>
-        <div class="kratos-post-content">
-            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1634222950682"></time> 前，其中的内容可能需要更新。
-            </div>
-            
-            <hr />
-            <p><strong>声明：该项目是牛客网的一个开源项目</strong></p>
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><strong>声明：该项目是牛客网的一个开源项目</strong></p>
 <p>@<a href="%E9%A3%9E%E7%BF%94%E5%B0%8F%E9%B8%9F%E6%B8%B8%E6%88%8F">TOC</a></p>
 <h1 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a>文章目录</h1><h1 id="一-效果图"><a href="#一-效果图" class="headerlink" title="一  效果图"></a>一  效果图</h1><p><img src="https://img-blog.csdnimg.cn/20210613224610839.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FzYmJ2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p><img src="https://img-blog.csdnimg.cn/20210613224637471.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FzYmJ2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
@@ -204,314 +127,509 @@
 <h2 id="3-小鸟类"><a href="#3-小鸟类" class="headerlink" title="3.小鸟类"></a>3.小鸟类</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> game;</span><br><span class="line"><span class="keyword">import</span> java.awt.*;</span><br><span class="line"><span class="keyword">import</span> javax.swing.*;</span><br><span class="line"><span class="keyword">import</span> javax.imageio.ImageIO;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bird</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	Image image;</span><br><span class="line">	<span class="keyword">int</span> x,y;</span><br><span class="line">	<span class="keyword">int</span> width,height;</span><br><span class="line">	<span class="keyword">int</span> size;</span><br><span class="line">	<span class="comment">//重力加速度</span></span><br><span class="line">	<span class="keyword">double</span> g;</span><br><span class="line">	<span class="comment">//位移间隔时间</span></span><br><span class="line">	<span class="keyword">double</span> t;</span><br><span class="line">	<span class="comment">//最初速度</span></span><br><span class="line">	<span class="keyword">double</span> v0;</span><br><span class="line">	<span class="comment">//当前上抛速度</span></span><br><span class="line">	<span class="keyword">double</span> speed;</span><br><span class="line">	<span class="comment">//经过时间t后的位移</span></span><br><span class="line">	<span class="keyword">double</span> s;</span><br><span class="line">	<span class="comment">//小鸟的倾角（弧度）</span></span><br><span class="line">	<span class="keyword">double</span> alpha;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//一组图片记录小鸟动画帧</span></span><br><span class="line">	Image[] images;</span><br><span class="line">	<span class="comment">//帧数下标</span></span><br><span class="line">	<span class="keyword">int</span> index;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Bird</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		image=<span class="keyword">new</span> ImageIcon(<span class="string">&quot;source/0.png&quot;</span>).getImage();</span><br><span class="line">		width = image.getWidth(<span class="keyword">null</span>);</span><br><span class="line">		height = image.getHeight(<span class="keyword">null</span>);</span><br><span class="line">		x=<span class="number">132</span>;</span><br><span class="line">		y=<span class="number">280</span>;</span><br><span class="line">		size=<span class="number">40</span>;</span><br><span class="line">		<span class="comment">//位移参数</span></span><br><span class="line">		g=<span class="number">4</span>;</span><br><span class="line">		v0=<span class="number">20</span>;</span><br><span class="line">		t=<span class="number">0.25</span>;</span><br><span class="line">		speed=v0;</span><br><span class="line">		s=<span class="number">0</span>;</span><br><span class="line">		<span class="comment">//小鸟偏转角度</span></span><br><span class="line">		alpha=<span class="number">0</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//初始化动画帧参数</span></span><br><span class="line">		images=<span class="keyword">new</span> Image[<span class="number">8</span>];</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			images[i]=<span class="keyword">new</span> ImageIcon(<span class="string">&quot;source/&quot;</span>+i+<span class="string">&quot;.png&quot;</span>).getImage();</span><br><span class="line">		&#125;</span><br><span class="line">		index=<span class="number">0</span>;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//飞行动作（变化一帧）</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fly</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		index++;</span><br><span class="line">		image=images[(index/<span class="number">12</span>)%<span class="number">8</span>];</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//移动一步</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">step</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">double</span> v0=speed;</span><br><span class="line">		<span class="comment">//计算上跑位移</span></span><br><span class="line">		s=v0*t+g*t*t/<span class="number">2</span>;</span><br><span class="line">		<span class="comment">//计算鸟的坐标</span></span><br><span class="line">		y=y-(<span class="keyword">int</span>)s;</span><br><span class="line">		<span class="comment">//计算下次移动速度</span></span><br><span class="line">		<span class="keyword">double</span> v=v0-g*t;</span><br><span class="line">		speed =v;</span><br><span class="line">		<span class="comment">//计算倾角（反正切函数）</span></span><br><span class="line">		alpha=Math.atan(s/<span class="number">8</span>);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//向上飞行</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">flappy</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">//重置速度</span></span><br><span class="line">		speed=v0;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//检测小鸟是否碰撞到地面</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hit</span><span class="params">(Ground ground)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">boolean</span> hit =y+size/<span class="number">2</span>&gt;ground.y;</span><br><span class="line">		<span class="keyword">if</span>(hit)</span><br><span class="line">		&#123;</span><br><span class="line">			y=ground.y-size/<span class="number">2</span>;</span><br><span class="line">			alpha=Math.PI/<span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> hit;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//检测小鸟是否撞到柱子</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hit</span><span class="params">(Column column)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">//检测是否在柱子范围内</span></span><br><span class="line">		<span class="keyword">if</span>(x&gt;column.x-column.width/<span class="number">2</span>-size/<span class="number">2</span>&amp;&amp;x&lt;column.x+column.width/<span class="number">2</span>+size/<span class="number">2</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(y&gt;column.y-column.gap/<span class="number">2</span>+size/<span class="number">2</span>&amp;&amp;y&lt;column.y+column.gap/<span class="number">2</span>-size/<span class="number">2</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="4-柱子类"><a href="#4-柱子类" class="headerlink" title="4.柱子类"></a>4.柱子类</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> game;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"><span class="keyword">import</span> java.awt.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.imageio.ImageIO;</span><br><span class="line"><span class="keyword">import</span> javax.swing.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Column</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	Image image;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">int</span> x,y;</span><br><span class="line">	<span class="keyword">int</span> width,height;</span><br><span class="line">	<span class="comment">//柱子之间缝隙</span></span><br><span class="line">	<span class="keyword">int</span> gap;</span><br><span class="line">	<span class="comment">//柱子之间的距离</span></span><br><span class="line">	<span class="keyword">int</span> distance;</span><br><span class="line">	Random random =<span class="keyword">new</span> Random();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//初始第N根柱子</span></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Column</span><span class="params">(<span class="keyword">int</span> n)</span> <span class="keyword">throws</span> Exception</span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		image=<span class="keyword">new</span> ImageIcon(<span class="string">&quot;source/column.png&quot;</span>).getImage();</span><br><span class="line">		width=image.getWidth(<span class="keyword">null</span>);</span><br><span class="line">		height=image.getHeight(<span class="keyword">null</span>);</span><br><span class="line">		gap=<span class="number">144</span>;</span><br><span class="line">		distance=<span class="number">245</span>;</span><br><span class="line">		x=<span class="number">550</span>+(n-<span class="number">1</span>)*distance;</span><br><span class="line">		y=random.nextInt(<span class="number">218</span>)+<span class="number">132</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">step</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		x-=<span class="number">4</span>;</span><br><span class="line">		<span class="keyword">if</span>(x&lt;= -width/<span class="number">2</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			x=distance*<span class="number">2</span>-width/<span class="number">2</span>;</span><br><span class="line">			y=random.nextInt(<span class="number">218</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
         </div>
-        
-            <div class="kratos-copyright text-center clearfix">
-                <h5>本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
-            </div>
-        
-        <footer class="kratos-entry-footer clearfix">
-            
-                <div class="post-like-donate text-center clearfix" id="post-like-donate">
-                
-                
-                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
-                    <div class="share-wrap" style="display: none;">
-    <div class="share-group">
-        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-qq"></i>
-            </div>
-        </a>
-        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-star"></i>
-            </div>
-        </a>
-        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-weixin"></i>
-            </div>
-            <div class="share-int">
-                <div class="qrcode" id="wechat-qr"></div>
-                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
-            </div>
-        </a>
-        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-weibo"></i>
-            </div>
-        </a>
-        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-facebook"></i>
-            </div>
-        </a>
-        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-twitter"></i>
-            </div>
-        </a>
+      </div>
+      
     </div>
-    <script type="text/javascript">
-        $(()=>{
-            new QRCode("wechat-qr", {
-                text: "http://example.com/2021/10/14/java400%E8%A1%8C%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F%E4%B8%8D%E5%A6%82%E5%86%99%E4%B8%AA%E9%A3%9E%E7%BF%94%E5%B0%8F%E9%B8%9F%E6%B8%B8%E6%88%8F%E5%90%A7/",
-                width: 150,
-                height: 150,
-                correctLevel : QRCode.CorrectLevel.H
-            });
-        });
-        function share(dest) {
-            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
-            const weiboBase     = "https://service.weibo.com/share/share.php?";
-            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
-            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
-            const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2021/10/14/java400%E8%A1%8C%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F%E4%B8%8D%E5%A6%82%E5%86%99%E4%B8%AA%E9%A3%9E%E7%BF%94%E5%B0%8F%E9%B8%9F%E6%B8%B8%E6%88%8F%E5%90%A7/";
-            const title         = "「飞翔小鸟游戏（java实现）」";
-            const excerpt       = `声明：该项目是牛客网的一个开源项目
-@TOC
-文章目录一  效果图
+    
 
-二 思维导图1.类的属性关系1234567891011121314151617181920graph LRA&#123;飞翔小鸟游戏类&#125;  --&gt; ...`;
-            let _URL;
-            switch (dest) {
-                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
-                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
-                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
-                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
-                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
-            }
-            window.open(_URL);
-        };
-    </script>
-</div>
-                
-                </div>
-            
-            <div class="footer-tag clearfix">
-                <div class="pull-left">
-                <i class="fa fa-tags"></i>
-                    
-                </div>
-                <div class="pull-date">
-                <span>最后编辑：2021-10-14</span>
-                </div>
-            </div>
-        </footer>
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
     </div>
     
-        <nav class="navigation post-navigation clearfix" role="navigation">
-            
-            <div class="nav-previous clearfix">
-                <a title=" 算法" href="/2021/10/14/给秋招加点料——Hot15道高频算法面试题！/">&lt; 上一篇</a>
-            </div>
-            
-            
-            <div class="nav-next clearfix">
-                <a title=" 文字交互电子宠物游戏" href="/2021/10/14/电子宠物游戏（附C++源码）/">下一篇 &gt;</a>
-            </div>
-            
-        </nav>
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2021/10/14/java400%E8%A1%8C%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F%E4%B8%8D%E5%A6%82%E5%86%99%E4%B8%AA%E9%A3%9E%E7%BF%94%E5%B0%8F%E9%B8%9F%E6%B8%B8%E6%88%8F%E5%90%A7/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2021/10/14/%E7%94%B5%E5%AD%90%E5%AE%A0%E7%89%A9%E6%B8%B8%E6%88%8F%EF%BC%88%E9%99%84C++%E6%BA%90%E7%A0%81%EF%BC%89/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            文字交互电子宠物游戏
+          
+        </div>
+      </a>
     
     
+      <a href="/2021/10/14/%E7%BB%99%E7%A7%8B%E6%8B%9B%E5%8A%A0%E7%82%B9%E6%96%99%E2%80%94%E2%80%94Hot15%E9%81%93%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%81/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">算法</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
 </article>
 
-        
-
-            </section>
-
-        
-
-                
-            
-
-<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
-    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
-    
-    
-                <aside id="krw-about" class="widget widget-kratos-about clearfix">
-    <div class="photo-background"></div>
-    <div class="photo-wrapper clearfix">
-        <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/avatar.webp" />
-        </div>
-    </div>
-    <div class="textwidget">
-        <p class="text-center"></p>
-    </div>
-</aside>
-            
-                    <div class="sticky-area">
-                
-                
-
-            
-                
-  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
-    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
-      <div class="tag-clouds">
-        <a href="/tags/c/" style="font-size: 0.8em;">c++</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.6em;">教程</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 0.6em;">算法</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 0.6em;">面试题</a>
-      </div>
-  </aside>
-
-            
-                
-  <aside id="krw-posts" class="widget widget-kratos-posts">
-  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
-  <div class="tab-content">
-      <ul class="list-group">
-        
-        
-          
-          
-            <a class="list-group-item" href="/2021/10/14/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/"><i class="fa  fa-book"></i> 线段树实现与应用</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2021/10/14/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B%EF%BC%88%E5%B0%8F%E7%99%BD%E7%89%88%EF%BC%89/"><i class="fa  fa-book"></i> 挖矿教程（小白版）</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2021/10/14/%E7%94%B5%E5%AD%90%E5%AE%A0%E7%89%A9%E6%B8%B8%E6%88%8F%EF%BC%88%E9%99%84C++%E6%BA%90%E7%A0%81%EF%BC%89/"><i class="fa  fa-book"></i> 文字交互电子宠物游戏</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2021/10/14/java400%E8%A1%8C%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F%E4%B8%8D%E5%A6%82%E5%86%99%E4%B8%AA%E9%A3%9E%E7%BF%94%E5%B0%8F%E9%B8%9F%E6%B8%B8%E6%88%8F%E5%90%A7/"><i class="fa  fa-book"></i> 飞翔小鸟游戏（java实现）</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2021/10/14/%E7%BB%99%E7%A7%8B%E6%8B%9B%E5%8A%A0%E7%82%B9%E6%96%99%E2%80%94%E2%80%94Hot15%E9%81%93%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%81/"><i class="fa  fa-book"></i> 算法</a>
-            
-          
-        
-          
-            
-      </ul>
-  </div>
-  </aside>
-
-            
-    </div>
 </section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2021
+        <i class="ri-heart-fill heart_icon"></i> John Doe
+      </li>
+    </ul>
+    <ul>
+      <li>
         
-        </div>
-    </div>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
 </div>
-<footer>
-    <div id="footer"  class="ap-lrc"  >
-        <div class="kr-tool text-center">
-            <div class="tool">
-                
-                    <div class="box search-box">
-                        <a href="/search/">
-                            <span class="fa fa-search"></span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="box theme-box" id="darkmode-switch">
-                        <span class="fa fa-adjust"></span>
-                    </div>
-                
-                
-            </div>
-            <div class="box gotop-box">
-                <span class="fa fa-chevron-up"></span>
-            </div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="Hexo"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 footer-list text-center">
-                    <ul class="kratos-social-icons">
-                        
-                        
-                        <li><a target="_blank" rel="nofollow" href="https://t.me/CandyUnion"><i class="fa fa-telegram"></i></a></li>
-                        
-                        
-                        
-                        <li><a target="_blank" rel="me" href="https://nya.one/@Candinya"><i class="fa fa fa-share-alt-square"></i></a></li>
-                        <li><a target="_blank" rel="nofollow" href="https://github.com/Candinya"><i class="fa fa-github"></i></a></li>
-                        
-                    </ul>
-                    <ul class="kratos-copyright">
-                        <div>
-                            <li>&copy; 2021 Hexo 版权所有.</li>
-                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
                         </div>
-                        <div>
-                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
-                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by John Doe.</li>
-                        </div>
-                        <div>
-                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
-                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
-                        </div>
-                        <div>
-                            
-                            
-                        </div>
-                    </ul>
+                    </div>
                 </div>
             </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
         </div>
+
     </div>
-</footer>
-</div>
+
 </div>
 
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
 <script>
-    if (!window.kr) {
-        window.kr = {};
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
     }
-    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
-    window.kr.siteRoot = "/";
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
 </script>
 
 
-    <script async src="/js/candy.min.js"></script>
-
-
-
-    <script defer src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-    <meting-js
-        server="netease"
-        type="playlist"
-        id="3204190542"
-        order="random"
-        fixed="true"
-    >
-    </meting-js>
+    
 
+  </div>
+</body>
 
-
-    <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-<script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
-<script defer src="/js/kratosr.min.js"></script>
-<script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
-
-
-
-<!-- Extra support for third-party plguins  -->
-
-
-    </body>
 </html>
