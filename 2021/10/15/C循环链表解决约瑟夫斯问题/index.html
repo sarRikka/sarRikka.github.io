@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>挖矿教程（小白版） | Rikka</title>
+  <title>循环链表解决约瑟夫斯问题 | Rikka</title>
   <meta name="author" content="cyy" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,20 +13,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="教程" />
+    <meta name="keywords" content="c++, 算法" />
   
-  <meta name="description" content="1.选择一个矿池完成注册—–（点击传送门）在官网注册好之后，这是注册子账户和配置矿机的图文教程（点击传送门），在完成相关的注册和子账户的配置后，我们进入下一步。 2.下载挖矿软件，这里推荐用轻松矿工，软件下载地址。 直接点开安装软件，注意勾选的选项  3.轻松矿工下载好了之后，点击运行 可以将虚拟内存设置高一些  矿工名可以随便打 币种我这选择了CKB 钱包就是我们之前创建的子账户，将子账户的名字">
+  <meta name="description" content="循环链表解决约瑟夫斯问题问题描述：设有n个人围坐成一个圆圈，按一定指向方向，从第s个人开始报数，数到m的人出列，然后从下一个人重新报数，数到m的人又出列，…，直到n个人全部出列为止。输入：n m s，按次序输出得到的n个人的顺序表。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="挖矿教程（小白版）">
-<meta property="og:url" content="http://example.com/2021/10/14/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B%EF%BC%88%E5%B0%8F%E7%99%BD%E7%89%88%EF%BC%89/index.html">
+<meta property="og:title" content="循环链表解决约瑟夫斯问题">
+<meta property="og:url" content="http://example.com/2021/10/15/C%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E8%A7%A3%E5%86%B3%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Rikka">
-<meta property="og:description" content="1.选择一个矿池完成注册—–（点击传送门）在官网注册好之后，这是注册子账户和配置矿机的图文教程（点击传送门），在完成相关的注册和子账户的配置后，我们进入下一步。 2.下载挖矿软件，这里推荐用轻松矿工，软件下载地址。 直接点开安装软件，注意勾选的选项  3.轻松矿工下载好了之后，点击运行 可以将虚拟内存设置高一些  矿工名可以随便打 币种我这选择了CKB 钱包就是我们之前创建的子账户，将子账户的名字">
+<meta property="og:description" content="循环链表解决约瑟夫斯问题问题描述：设有n个人围坐成一个圆圈，按一定指向方向，从第s个人开始报数，数到m的人出列，然后从下一个人重新报数，数到m的人又出列，…，直到n个人全部出列为止。输入：n m s，按次序输出得到的n个人的顺序表。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/null">
-<meta property="article:published_time" content="2021-10-14T14:48:02.270Z">
-<meta property="article:modified_time" content="2021-10-14T14:56:23.363Z">
+<meta property="article:published_time" content="2021-10-15T06:42:35.223Z">
+<meta property="article:modified_time" content="2021-10-15T06:59:39.216Z">
 <meta property="article:author" content="cyy">
-<meta property="article:tag" content="教程">
+<meta property="article:tag" content="c++">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/null">
 <meta name="twitter:site" content="@null">
@@ -110,11 +111,11 @@
                                                     
                                                 
                                                     
-                                                        <li><a target="_blank" rel="noopener" href="https://candinya.com">作者博客</a></li>
+                                                        <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/asbbv">CSDN博客</a></li>
                                                     
                                                 
                                                     
-                                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">项目链接</a></li>
+                                                        <li><a target="_blank" rel="noopener" href="https://github.com/sarRikka/sarRikka.github.io">项目链接</a></li>
                                                     
                                                 
                                             </ul>
@@ -143,7 +144,7 @@
                 <div class="desc desc2 animate-box">
                     <a href="/">
                         <h2>Rikka</h2> <br />
-                        <span>Rikka</span>
+                        <span></span>
                     </a>
                 </div>
             </div>
@@ -164,17 +165,17 @@
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">挖矿教程（小白版）</h1>
+                <h1 class="kratos-entry-title text-center">循环链表解决约瑟夫斯问题</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2021-10-14</li>
+                <li><i class="fa fa-calendar"></i> 2021-10-15</li>
                 <li><i class="fa fa-user"></i> 作者 cyy</li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
                     
-                        314
+                        1336
                     
                     字
                 </li>
@@ -183,25 +184,23 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1634223383363"></time> 前，其中的内容可能需要更新。
+                本文最后编辑于 <time datetime="1634281179216"></time> 前，其中的内容可能需要更新。
             </div>
             
+                <div class="kratos-post-inner-toc">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E8%A7%A3%E5%86%B3%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">循环链表解决约瑟夫斯问题</span></a></li></ol>
+                </div>
+            
             <hr />
-            <p><strong>1.选择一个矿池完成注册</strong>—–<a target="_blank" rel="noopener" href="https://www.sparkpool.com/">（点击传送门）</a><br>在官网注册好之后，<a target="_blank" rel="noopener" href="https://help.sparkpool.com/hc/kb/article/1413627/?lang=zh_cn">这是注册子账户和配置矿机的图文教程（点击传送门）</a>，在完成相关的注册和子账户的配置后，我们进入下一步。</p>
-<p><strong>2.下载挖矿软件，这里推荐用轻松矿工</strong>，<a target="_blank" rel="noopener" href="http://www.qskg.top/download.html">软件下载地址</a>。</p>
-<p><img src="https://img-blog.csdnimg.cn/20201126004544536.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FzYmJ2,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><strong>直接点开安装软件，注意勾选的选项</strong></p>
-<p><img src="https://img-blog.csdnimg.cn/20201126004722379.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FzYmJ2,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p><strong>3.轻松矿工下载好了之后，点击运行</strong></p>
-<p><img src="https://img-blog.csdnimg.cn/20201126005240971.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FzYmJ2,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><strong>可以将虚拟内存设置高一些</strong></p>
-<p><img src="https://img-blog.csdnimg.cn/20201126010141207.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FzYmJ2,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p><strong>矿工名可以随便打</strong></p>
-<p><strong>币种我这选择了CKB</strong></p>
-<p><strong>钱包就是我们之前创建的子账户，将子账户的名字复制粘贴进钱包那。</strong></p>
-<p><strong>矿池星火，内壳第一个就好。</strong></p>
-<p><img src="https://img-blog.csdnimg.cn/20201126005734722.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FzYmJ2,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p><strong>之后点击开始挖矿，在这可以查看收益</strong></p>
-<p><img src="https://img-blog.csdnimg.cn/20201126010347431.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FzYmJ2,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><strong>这是我用笔记本挖了10min获得的CKB币，注意别用笔记本挖矿，很伤寿命！！！我只是挖着玩玩。</strong><br><img src="https://img-blog.csdnimg.cn/20201126010417999.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FzYmJ2,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p><strong>接下来大家可以试着获得属于自己的虚拟货币了~</strong></p>
+            <h2 id="循环链表解决约瑟夫斯问题"><a href="#循环链表解决约瑟夫斯问题" class="headerlink" title="循环链表解决约瑟夫斯问题"></a>循环链表解决约瑟夫斯问题</h2><p><strong>问题描述：设有n个人围坐成一个圆圈，按一定指向方向，从第s个人开始报数，数到m的人出列，然后从下一个人重新报数，数到m的人又出列，…，直到n个人全部出列为止。<br>输入：n m s，按次序输出得到的n个人的顺序表。</strong></p>
+<span id="more"></span>
+
+
+
+
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> datetype;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">node</span>//构建链表节点 </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	datetype data;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">node</span>* <span class="title">next</span>;</span></span><br><span class="line">&#125;ListNode,*LinkList;<span class="comment">//节点与表头指针</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">CreateCircleLinkList</span><span class="params">(LinkList &amp;rear,<span class="keyword">int</span> n)</span><span class="comment">//创建链表 </span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ListNode *p,*pre;</span><br><span class="line">	p = <span class="literal">NULL</span>;</span><br><span class="line">	rear=pre= <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		p = <span class="keyword">new</span> ListNode;</span><br><span class="line">		p-&gt;data = i + <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (rear == <span class="literal">NULL</span>) rear = p;</span><br><span class="line">		<span class="keyword">if</span> (pre != <span class="literal">NULL</span>) pre-&gt; next= p;</span><br><span class="line">		pre = p;</span><br><span class="line">	&#125;</span><br><span class="line">	p-&gt;next = rear;<span class="comment">//循环链表的构建 </span></span><br><span class="line">	pre = rear;<span class="comment">//pre 指向链首节点</span></span><br><span class="line">	rear=p;<span class="comment">//rear 指向链尾节点 </span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">josephus</span><span class="params">(LinkList &amp;rear,<span class="keyword">int</span> m,<span class="keyword">int</span> s)</span><span class="comment">//约瑟夫斯 问题 </span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ListNode *p;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;s;i++)<span class="comment">//移到s-1个节点，从第s个人开始报数 </span></span><br><span class="line">	&#123;</span><br><span class="line">		rear=rear-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span>(rear-&gt;next!=rear)<span class="comment">//当循环链表不为一个节点 </span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;m;i++)<span class="comment">//移动m-1个人后再将第m个出列 </span></span><br><span class="line">		&#123;</span><br><span class="line">			rear=rear-&gt;next;</span><br><span class="line">		&#125;</span><br><span class="line">		p=rear-&gt;next;</span><br><span class="line">		cout&lt;&lt;p-&gt;data&lt;&lt;<span class="string">&quot;  &quot;</span>;</span><br><span class="line">		rear-&gt;next=p-&gt;next;<span class="comment">//将报到m的人出列</span></span><br><span class="line">		<span class="keyword">delete</span> p;</span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; rear-&gt;data;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	LinkList rear;</span><br><span class="line">	<span class="keyword">int</span> n,m,s;</span><br><span class="line">	cin&gt;&gt;n&gt;&gt;m&gt;&gt;s;</span><br><span class="line">	cout &lt;&lt; endl;</span><br><span class="line">	<span class="built_in">CreateCircleLinkList</span>(rear,n);</span><br><span class="line">	<span class="built_in">josephus</span>(rear,m,s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
         </div>
         
@@ -255,7 +254,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2021/10/14/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B%EF%BC%88%E5%B0%8F%E7%99%BD%E7%89%88%EF%BC%89/",
+                text: "http://example.com/2021/10/15/C%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E8%A7%A3%E5%86%B3%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -267,11 +266,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2021/10/14/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B%EF%BC%88%E5%B0%8F%E7%99%BD%E7%89%88%EF%BC%89/";
-            const title         = "「挖矿教程（小白版）」";
-            const excerpt       = `1.选择一个矿池完成注册—–（点击传送门）在官网注册好之后，这是注册子账户和配置矿机的图文教程（点击传送门），在完成相关的注册和子账户的配置后，我们进入下一步。
-2.下载挖矿软件，这里推荐用轻松矿工，软件下载地址。
-直接点开安装软件，...`;
+            const hostUrl       = "http://example.com/2021/10/15/C%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E8%A7%A3%E5%86%B3%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98/";
+            const title         = "「循环链表解决约瑟夫斯问题」";
+            const excerpt       = `循环链表解决约瑟夫斯问题问题描述：设有n个人围坐成一个圆圈，按一定指向方向，从第s个人开始报数，数到m的人出列，然后从下一个人重新报数，数到m的人又出列，…，直到n个人全部出列为止。输入：n m s，按次序输出得到的n个人的顺序表。`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -290,10 +287,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a>
+                    <a class="tag-none-link" href="/tags/c/" rel="tag">c++</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
                 </div>
                 <div class="pull-date">
-                <span>最后编辑：2021-10-14</span>
+                <span>最后编辑：2021-10-15</span>
                 </div>
             </div>
         </footer>
@@ -302,12 +299,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 文字交互电子宠物游戏" href="/2021/10/14/电子宠物游戏（附C++源码）/">&lt; 上一篇</a>
+                <a title=" 八皇后问题" href="/2021/10/15/回溯算法——八皇后问题/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" 线段树实现与应用" href="/2021/10/14/线段树--概念+模板+入门题/">下一篇 &gt;</a>
+                <a title=" 算法" href="/2021/10/16/给秋招加点料——Hot15道高频算法面试题！/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -336,11 +333,23 @@
         </div>
     </div>
     <div class="textwidget">
-        <p class="text-center">算法，后端，java ,  杂笔</p>
+        <p class="text-center">算法，后端，面试，随笔</p>
     </div>
 </aside>
             
                     <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix">
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar"></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E8%A7%A3%E5%86%B3%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"><span class="toc-text">循环链表解决约瑟夫斯问题</span></a></li></ol>
+    </div>
+</aside>
                 
                 
 
@@ -349,7 +358,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/c/" style="font-size: 0.8em;">c++</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.6em;">教程</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 0.6em;">算法</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 0.6em;">面试题</a>
+        <a href="/tags/c/" style="font-size: 0.8em;">c++</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.6em;">教程</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 0.8em;">算法</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 0.6em;">面试题</a>
       </div>
   </aside>
 
@@ -363,34 +372,40 @@
         
           
           
-            <a class="list-group-item" href="/2021/10/14/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/"><i class="fa  fa-book"></i> 线段树实现与应用</a>
+            <a class="list-group-item" href="/2021/10/16/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B%EF%BC%88%E5%B0%8F%E7%99%BD%E7%89%88%EF%BC%89/"><i class="fa  fa-book"></i> 挖矿教程（小白版）</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2021/10/14/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B%EF%BC%88%E5%B0%8F%E7%99%BD%E7%89%88%EF%BC%89/"><i class="fa  fa-book"></i> 挖矿教程（小白版）</a>
+            <a class="list-group-item" href="/2021/10/16/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/"><i class="fa  fa-book"></i> 线段树实现与应用</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2021/10/14/%E7%94%B5%E5%AD%90%E5%AE%A0%E7%89%A9%E6%B8%B8%E6%88%8F%EF%BC%88%E9%99%84C++%E6%BA%90%E7%A0%81%EF%BC%89/"><i class="fa  fa-book"></i> 文字交互电子宠物游戏</a>
+            <a class="list-group-item" href="/2021/10/16/%E7%BB%99%E7%A7%8B%E6%8B%9B%E5%8A%A0%E7%82%B9%E6%96%99%E2%80%94%E2%80%94Hot15%E9%81%93%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%81/"><i class="fa  fa-book"></i> 算法</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2021/10/14/java400%E8%A1%8C%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F%E4%B8%8D%E5%A6%82%E5%86%99%E4%B8%AA%E9%A3%9E%E7%BF%94%E5%B0%8F%E9%B8%9F%E6%B8%B8%E6%88%8F%E5%90%A7/"><i class="fa  fa-book"></i> 飞翔小鸟游戏（java实现）</a>
+            <a class="list-group-item" href="/2021/10/15/C%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E8%A7%A3%E5%86%B3%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98/"><i class="fa  fa-book"></i> 循环链表解决约瑟夫斯问题</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2021/10/14/%E7%BB%99%E7%A7%8B%E6%8B%9B%E5%8A%A0%E7%82%B9%E6%96%99%E2%80%94%E2%80%94Hot15%E9%81%93%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%81/"><i class="fa  fa-book"></i> 算法</a>
+            <a class="list-group-item" href="/2021/10/15/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/"><i class="fa  fa-book"></i> 八皇后问题</a>
             
           
         
+          
+            
+          
+            
+          
+            
           
             
       </ul>

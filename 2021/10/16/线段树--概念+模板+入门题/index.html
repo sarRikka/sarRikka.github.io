@@ -13,20 +13,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="c++" />
+    <meta name="keywords" content="c++, 算法" />
   
   <meta name="description" content="引子子问题–1给出n个数，m次问询，每次问询给出一个范围l、r，求区间l–r的总和很容易想到用前缀和可以解决  O(n) 子问题–2给出n个数，m次修改，每次给出一个范围l、r和一个值k，将区间l—r的数全部+k，m次修改后，再问询1次求区间l–r的总和也可以想到这用差分就能解决  O(n)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="线段树实现与应用">
-<meta property="og:url" content="http://example.com/2021/10/14/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/index.html">
+<meta property="og:url" content="http://example.com/2021/10/16/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/index.html">
 <meta property="og:site_name" content="Rikka">
 <meta property="og:description" content="引子子问题–1给出n个数，m次问询，每次问询给出一个范围l、r，求区间l–r的总和很容易想到用前缀和可以解决  O(n) 子问题–2给出n个数，m次修改，每次给出一个范围l、r和一个值k，将区间l—r的数全部+k，m次修改后，再问询1次求区间l–r的总和也可以想到这用差分就能解决  O(n)">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/null">
-<meta property="article:published_time" content="2021-10-14T14:48:02.277Z">
-<meta property="article:modified_time" content="2021-10-14T15:49:19.043Z">
+<meta property="article:published_time" content="2021-10-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-10-15T07:04:04.446Z">
 <meta property="article:author" content="cyy">
 <meta property="article:tag" content="c++">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/null">
 <meta name="twitter:site" content="@null">
@@ -110,11 +111,11 @@
                                                     
                                                 
                                                     
-                                                        <li><a target="_blank" rel="noopener" href="https://candinya.com">作者博客</a></li>
+                                                        <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/asbbv">CSDN博客</a></li>
                                                     
                                                 
                                                     
-                                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">项目链接</a></li>
+                                                        <li><a target="_blank" rel="noopener" href="https://github.com/sarRikka/sarRikka.github.io">项目链接</a></li>
                                                     
                                                 
                                             </ul>
@@ -143,7 +144,7 @@
                 <div class="desc desc2 animate-box">
                     <a href="/">
                         <h2>Rikka</h2> <br />
-                        <span>Rikka</span>
+                        <span></span>
                     </a>
                 </div>
             </div>
@@ -168,7 +169,7 @@
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2021-10-14</li>
+                <li><i class="fa fa-calendar"></i> 2021-10-16</li>
                 <li><i class="fa fa-user"></i> 作者 cyy</li>
                 <li>
                     <i class="fa fa-edit"></i> 
@@ -183,8 +184,12 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1634226559043"></time> 前，其中的内容可能需要更新。
+                本文最后编辑于 <time datetime="1634281444446"></time> 前，其中的内容可能需要更新。
             </div>
+            
+                <div class="kratos-post-inner-toc">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E5%AD%90"><span class="toc-number">1.</span> <span class="toc-text">引子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">2.</span> <span class="toc-text">线段树基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-number">3.</span> <span class="toc-text">线段树基本操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%AE%B5%E6%A0%91%E6%A8%A1%E6%9D%BF"><span class="toc-number">4.</span> <span class="toc-text">线段树模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%85%A5%E9%97%A8%E9%A2%98"><span class="toc-number">5.</span> <span class="toc-text">线段树入门题</span></a></li></ol>
+                </div>
             
             <hr />
             <h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2><p>子问题–1<br>给出n个数，m次问询，每次问询给出一个范围l、r，求区间l–r的总和<br>很容易想到用前缀和可以解决  O(n)</p>
@@ -302,7 +307,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2021/10/14/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/",
+                text: "http://example.com/2021/10/16/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -314,7 +319,7 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2021/10/14/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/";
+            const hostUrl       = "http://example.com/2021/10/16/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/";
             const title         = "「线段树实现与应用」";
             const excerpt       = `引子子问题–1给出n个数，m次问询，每次问询给出一个范围l、r，求区间l–r的总和很容易想到用前缀和可以解决  O(n)
 子问题–2给出n个数，m次修改，每次给出一个范围l、r和一个值k，将区间l—r的数全部+k，m次修改后，再问询1次求区间l–r的总和也可以想到这用差分就能解决  O(n)`;
@@ -336,10 +341,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/c/" rel="tag">c++</a>
+                    <a class="tag-none-link" href="/tags/c/" rel="tag">c++</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
                 </div>
                 <div class="pull-date">
-                <span>最后编辑：2021-10-14</span>
+                <span>最后编辑：2021-10-15</span>
                 </div>
             </div>
         </footer>
@@ -348,9 +353,13 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 挖矿教程（小白版）" href="/2021/10/14/挖矿教程（小白版）/">&lt; 上一篇</a>
+                <a title=" 算法" href="/2021/10/16/给秋招加点料——Hot15道高频算法面试题！/">&lt; 上一篇</a>
             </div>
             
+            
+            <div class="nav-next clearfix">
+                <a title=" 挖矿教程（小白版）" href="/2021/10/16/挖矿教程（小白版）/">下一篇 &gt;</a>
+            </div>
             
         </nav>
     
@@ -378,11 +387,23 @@
         </div>
     </div>
     <div class="textwidget">
-        <p class="text-center">算法，后端，java ,  杂笔</p>
+        <p class="text-center">算法，后端，面试，随笔</p>
     </div>
 </aside>
             
                     <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix">
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar"></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E5%AD%90"><span class="toc-text">引子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">线段树基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">线段树基本操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%AE%B5%E6%A0%91%E6%A8%A1%E6%9D%BF"><span class="toc-text">线段树模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%85%A5%E9%97%A8%E9%A2%98"><span class="toc-text">线段树入门题</span></a></li></ol>
+    </div>
+</aside>
                 
                 
 
@@ -391,7 +412,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/c/" style="font-size: 0.8em;">c++</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.6em;">教程</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 0.6em;">算法</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 0.6em;">面试题</a>
+        <a href="/tags/c/" style="font-size: 0.8em;">c++</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.6em;">教程</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 0.8em;">算法</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 0.6em;">面试题</a>
       </div>
   </aside>
 
@@ -405,34 +426,40 @@
         
           
           
-            <a class="list-group-item" href="/2021/10/14/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/"><i class="fa  fa-book"></i> 线段树实现与应用</a>
+            <a class="list-group-item" href="/2021/10/16/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B%EF%BC%88%E5%B0%8F%E7%99%BD%E7%89%88%EF%BC%89/"><i class="fa  fa-book"></i> 挖矿教程（小白版）</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2021/10/14/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B%EF%BC%88%E5%B0%8F%E7%99%BD%E7%89%88%EF%BC%89/"><i class="fa  fa-book"></i> 挖矿教程（小白版）</a>
+            <a class="list-group-item" href="/2021/10/16/%E7%BA%BF%E6%AE%B5%E6%A0%91--%E6%A6%82%E5%BF%B5+%E6%A8%A1%E6%9D%BF+%E5%85%A5%E9%97%A8%E9%A2%98/"><i class="fa  fa-book"></i> 线段树实现与应用</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2021/10/14/%E7%94%B5%E5%AD%90%E5%AE%A0%E7%89%A9%E6%B8%B8%E6%88%8F%EF%BC%88%E9%99%84C++%E6%BA%90%E7%A0%81%EF%BC%89/"><i class="fa  fa-book"></i> 文字交互电子宠物游戏</a>
+            <a class="list-group-item" href="/2021/10/16/%E7%BB%99%E7%A7%8B%E6%8B%9B%E5%8A%A0%E7%82%B9%E6%96%99%E2%80%94%E2%80%94Hot15%E9%81%93%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%81/"><i class="fa  fa-book"></i> 算法</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2021/10/14/java400%E8%A1%8C%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F%E4%B8%8D%E5%A6%82%E5%86%99%E4%B8%AA%E9%A3%9E%E7%BF%94%E5%B0%8F%E9%B8%9F%E6%B8%B8%E6%88%8F%E5%90%A7/"><i class="fa  fa-book"></i> 飞翔小鸟游戏（java实现）</a>
+            <a class="list-group-item" href="/2021/10/15/C%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E8%A7%A3%E5%86%B3%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98/"><i class="fa  fa-book"></i> 循环链表解决约瑟夫斯问题</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2021/10/14/%E7%BB%99%E7%A7%8B%E6%8B%9B%E5%8A%A0%E7%82%B9%E6%96%99%E2%80%94%E2%80%94Hot15%E9%81%93%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%81/"><i class="fa  fa-book"></i> 算法</a>
+            <a class="list-group-item" href="/2021/10/15/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/"><i class="fa  fa-book"></i> 八皇后问题</a>
             
           
         
+          
+            
+          
+            
+          
+            
           
             
       </ul>
